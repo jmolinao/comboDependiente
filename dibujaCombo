@@ -1,0 +1,11 @@
+<body>
+<select name="combo1" id="combo1">	
+	<option value="op1_1">Option1</option>
+    <option value="op1_2">Option2</option>
+    <option value="op1_3">Option3</option>    
+</select>
+<select name="combo2" id="combo2">	
+</select>
+<select name="combo3" id="combo3">	
+</select>
+</body>
