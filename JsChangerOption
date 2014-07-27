@@ -1,0 +1,25 @@
+<script language="javascript">
+$(document).ready(function(){
+	// Parametros para e combo1
+   $("#combo1").change(function () {
+   		$("#combo1 option:selected").each(function () {
+			//alert($(this).val());
+				elegido=$(this).val();
+				$.post("combo1.php", { elegido: elegido }, function(data){
+				$("#combo2").html(data);
+				$("#combo3").html("");
+			});			
+        });
+   })
+	// Parametros para el combo2
+	$("#combo2").change(function () {
+   		$("#combo2 option:selected").each(function () {
+			//alert($(this).val());
+				elegido=$(this).val();
+				$.post("combo2.php", { elegido: elegido }, function(data){
+				$("#combo3").html(data);
+			});			
+        });
+   })
+});
+</script>
